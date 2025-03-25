@@ -12,8 +12,6 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('histories', function (Blueprint $table) {
-            $table->id();
-            Schema::create('histories', function (Blueprint $table) {
                 $table->id();
                 $table->foreignId('user_id')->constrained()->onDelete('cascade'); // Patient
                 $table->foreignId('doctor_id')->nullable()->constrained('users')->onDelete('set null'); // Doctor
@@ -21,9 +19,7 @@ return new class extends Migration
                 $table->text('prescription')->nullable(); // Medicine or treatment
                 $table->text('notes')->nullable(); // Additional information
                 $table->timestamps();
-            });
             
-            $table->timestamps();
         });
     }
 
