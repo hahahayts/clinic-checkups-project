@@ -1,7 +1,13 @@
 <script setup>
 import { ref } from "vue";
+import UserLayout from '../../layout/user/UserLayout.vue'
+
+
 </script>
 
 <template>
-    <h1>Nigga</h1>
+  <UserLayout>
+
+      <h1>User's Homepage</h1>
+  </UserLayout>
 </template>
